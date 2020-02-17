@@ -1,7 +1,7 @@
 #ifndef cJSON__H
 #define cJSON__H
 
-#ifdef __cpluspluc
+#ifdef __cplusplus
 extern "C"
 {
 #endif
@@ -32,8 +32,14 @@ typedef struct cJSON{
 	char *string;
 } cJSON;
 
+typedef struct {
+	char *buffer;
+	int length;
+	int offset;
+} printbuffer;
+
 typedef struct cJSON_Hooks {
-	void *(*malloc_fn) (size_t sz);
+	void *(*malloc_fn)(size_t sz);
 	void (*free_fn)(void *ptr);
 } cJSON_Hooks;
 
@@ -107,6 +113,7 @@ extern void cJSON_Minify(char *json);
 // 分配整数值时，也需要将其传播为valuedouble
 #define cJSON_SetIntValue(object, val)	((object) ? (object)->valueint = (object)->valuedouble = (val) : (val))
 #define cJSON_SetNumberValue(object, val)	((object) ? (object)->valueint = (object)->valuedouble = (val) : (val))
+
 
 #ifdef __cplusplus
 }
