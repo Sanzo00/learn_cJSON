@@ -1,7 +1,8 @@
-cJSON是一个轻量级的解析cJSON的解析器, 纯c实现, 支持跨平台.
-[项目地址](https://sourceforge.net/projects/cjson/)
+cJSON是一个轻量级的cJSON解析器, 纯c实现, 支持跨平台.
+
 作者在[github](https://github.com/DaveGamble/cJSON)也上传了, 扩展一些功能和支持了跨平台.
-sourceforge代码少一些, 适合初学.
+
+[sourceforge](https://sourceforge.net/projects/cjson/)代码少一些, 适合初学.
 
 ## 使用
 
