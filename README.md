@@ -1,8 +1,10 @@
 cJSON是一个轻量级的cJSON解析器, 纯c实现, 支持跨平台.
 
-作者在[github](https://github.com/DaveGamble/cJSON)也上传了, 扩展一些功能和支持了跨平台.
+[项目地址](https://sourceforge.net/projects/cjson/), 代码相对github上的少一些, 适合初学.
 
-[sourceforge](https://sourceforge.net/projects/cjson/)代码少一些, 适合初学.
+[github](https://github.com/DaveGamble/cJSON)也有这个项目, 作者扩展了一些功能和跨平台的支持.
+
+
 
 ## 使用
 
